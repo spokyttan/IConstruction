@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="47F7A4CA-7C6E-B890-171D-31E95BE2AB2E" name="obrero">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>079654A1-C28C-ACDB-F544-1CE3C670AC99</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B7DCCFA4-CFA2-4827-067D-2F1988A626DF">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>4C5393E0-D4E4-254B-40B3-3432EEB1035C</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="043A63D4-573D-B6AC-6981-90731D1C44A6">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>EA96B7E0-B95E-B6FA-9525-212B4479C9E9</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bodeguero_cargo_id" id="7BF25C0F-6BF3-A9E8-293E-7BEB7913CE3F">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>1E9F5884-E6B0-30DF-7982-FDB93F5ED502</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C23E404-5B23-5E92-2317-869354BB1185" referredColumn="DCFF4FBE-5C08-21A2-A613-52AA74DE4B25"/>
+</associations>
+</Column>
+<Column name="prestamo_estado_id" id="437C8EC4-CB9E-F7B8-2662-084422697901">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>D8098B4C-0A18-90E7-7040-3CD38C24DD7A</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3AB3030-A5B0-D644-C115-7468D2ACA45C" referredColumn="53745566-9197-2D36-E265-CABC95D13640"/>
+</associations>
+</Column>
+<Column name="usuario_id" id="06D2CF13-AFE7-2650-CB5D-37372BF3BC49">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>47C222B4-93AB-E55D-C451-269A03154FD6</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F04894A-6D0E-509B-7667-29DBA6181F4E" referredColumn="A8A613BA-9D17-2094-084D-4EFCC37F751A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BFE677A-5A0B-6627-ECA9-A45DFD379940" name="obrero_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>AEE78A77-96B3-38B0-D752-7AC62825EC68</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7DCCFA4-CFA2-4827-067D-2F1988A626DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6E6268A-3636-CFCE-6007-1A7156020C40" name="obrero__IDX">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B12A7A34-52C9-933A-DCDF-2165007A25D0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="06D2CF13-AFE7-2650-CB5D-37372BF3BC49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="357B780C-F394-6A55-6891-92A19A46BAA2" name="obrero_bodeguero_cargo_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>C122EB75-FCCE-6C7D-7CDC-CEFB0CEC87F1</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BF25C0F-6BF3-A9E8-293E-7BEB7913CE3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C64E6E73-EBA3-DFD1-0C2A-8D5B08F0BB04" name="obrero_prestamo_estado_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>5C0CD2D4-C542-92E8-C795-833B0A50F01C</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="437C8EC4-CB9E-F7B8-2662-084422697901"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4D6A46C-A2F4-3108-C96B-8B23150767B0" name="obrero_usuario_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>B12A7A34-52C9-933A-DCDF-2165007A25D0</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06D2CF13-AFE7-2650-CB5D-37372BF3BC49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

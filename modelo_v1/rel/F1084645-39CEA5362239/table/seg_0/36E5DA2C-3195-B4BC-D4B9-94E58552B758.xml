@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36E5DA2C-3195-B4BC-D4B9-94E58552B758" name="material_categoria">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>C155106B-F441-0087-960C-48F90FF07D3E</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7B3E7C1B-D520-31BC-7BE5-742D9207DCE2">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>CA5E42F7-FE23-164C-430C-FAC74C176DDD</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="CD85B9C1-8811-5580-9FCB-167CC13026C7">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>1398B26F-72C5-A16C-0A89-E1A8E28C9400</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="9EC184D3-467B-ED86-2E0E-730F79761FEB">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>0D3653B3-E457-4959-892E-5401BD0A1815</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AEA7B9A-0EDD-4765-2ECD-70B78C217D14" name="material_categoria_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>F943850A-F60A-C658-1A4E-72E730DB070C</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B3E7C1B-D520-31BC-7BE5-742D9207DCE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9200CFC2-DBCA-DC7B-665F-CD5803E0F6A6" containerWithKeyObject="A5AB1892-57AE-7635-EEEB-A391ACA053AD" localFKIndex="220EF29C-F1B6-93CB-8616-04A68350B1E5" name="material_material_tipo_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>65DA822F-A362-A7D6-42A1-40F3236A0A31</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<referredTableLongName>material_tipo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>36C615E0-B8DD-E827-5AF3-100FEBC395F8</referredTableID>
+<keyObject>0CFE5371-712B-6936-A321-3A42054B42D6</keyObject>
+<referredKeyID>0CFE5371-712B-6936-A321-3A42054B42D6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

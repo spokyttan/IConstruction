@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E45FA9B5-922C-86AE-6849-97D655C8E358" name="bodegas_herramientas">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="herramienta_id" id="AB99EA46-65A6-8919-C94F-4175EB0EFC55">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED114FA7-FC3D-FE1B-74FD-82E326DC99DE" referredColumn="3457049C-1C67-22D5-8DC0-2BCF25B24D6B"/>
+</associations>
+</Column>
+<Column name="bodega_id" id="3B1B314A-526C-BE5B-0718-D61392ABCCE7">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4935660B-415D-B750-C907-A3DD9DAC36C5" referredColumn="F536A9BA-43E7-2D9D-3C08-661F0B3A30EA"/>
+</associations>
+</Column>
+<Column name="id" id="5D5AB562-FBDB-C033-7648-A6A9B65B688B">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>42F95C46-13FE-A2FE-92F9-72BB52766E47</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="cantidad" id="90E70E9F-87D8-F591-DBC5-E444CDF5240F">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>6FCB4EB1-D01B-CE93-E8F2-540A2239F96A</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2EBF4E8-EAAE-046E-2C8A-83142A1E8C6F" name="bodegas_herramientas_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB99EA46-65A6-8919-C94F-4175EB0EFC55"/>
+<colUsage columnID="3B1B314A-526C-BE5B-0718-D61392ABCCE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="550D3489-5FD9-3EE1-1D92-1DCB5BA68A8C" name="bodegas_herramientas_herramienta_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>93DB09EF-C2BA-FE79-3241-97DC6E74C5B9</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB99EA46-65A6-8919-C94F-4175EB0EFC55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BCDB7E8-DA1E-05D0-7F3F-3C17749DBA38" name="bodegas_herramientas_bodega_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>93DB09EF-C2BA-FE79-3241-97DC6E74C5B9</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B1B314A-526C-BE5B-0718-D61392ABCCE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

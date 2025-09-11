@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6577A9A1-2F46-377D-E60A-B896839EBBE7" name="reporte">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>3D2A8FE6-5432-2078-9D6F-CC66FD340557</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7B87D09F-360C-C3BF-3B3E-95D0254967A6">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>8C7A28E3-AAE5-5373-1B80-443350D8DA7B</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="C425079C-6F33-3B2B-EBCE-2536920B399F">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>AFC83F67-E0DD-61E1-71B2-285B1A43E9AF</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="9DEF8CF4-F3C0-4C63-9D9D-70A360089B7D">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>39597CBB-984C-C3E6-928D-7B94197FAB2E</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supervisor_obra_id" id="92CD34E5-1BB0-FD34-A9BE-A8F3A240B800">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>C7F552CF-765F-FF52-21E7-31610C38932F</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F877DD0-76C9-0880-F0B8-7EA555450CBF" referredColumn="0949C28C-15B5-D354-7603-336B1A0941CF"/>
+</associations>
+</Column>
+<Column name="proyecto_id" id="D0E3CD55-6145-476D-608E-57100A812ED1">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>97D3EE00-34D6-0743-4ADE-900B3783D36E</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66249962-0649-9E2E-74D4-0881717AF5E7" referredColumn="359D079E-9E45-DAA5-F96D-2D71ED4760B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="045FF245-18B6-7A7C-765C-572381C76C17" name="reporte_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>AA3E3D15-14A4-5962-5E4E-41B9FC68536C</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B87D09F-360C-C3BF-3B3E-95D0254967A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CF06A17-5AE9-02F9-EAE6-2DADF7F6E4FE" name="reporte_supervisor_obra_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>0783FC77-9D88-7E8F-6342-C6461A4022F1</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92CD34E5-1BB0-FD34-A9BE-A8F3A240B800"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE6104E3-03DD-98FE-80A0-1CF42BE48594" name="reporte_proyecto_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>E9C9F7D2-10D9-8AD3-BC37-3A51AB62C8E7</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0E3CD55-6145-476D-608E-57100A812ED1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

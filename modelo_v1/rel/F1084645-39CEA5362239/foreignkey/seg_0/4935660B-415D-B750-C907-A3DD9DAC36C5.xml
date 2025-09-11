@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4935660B-415D-B750-C907-A3DD9DAC36C5" containerWithKeyObject="E45FA9B5-922C-86AE-6849-97D655C8E358" localFKIndex="7BCDB7E8-DA1E-05D0-7F3F-3C17749DBA38" name="bodegas_herramientas_bodega_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>93DB09EF-C2BA-FE79-3241-97DC6E74C5B9</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<referredTableLongName>bodega</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8EAFE3BF-FFF0-B078-2883-6B988278F6FD</referredTableID>
+<keyObject>61D7993F-1EC8-8979-8C30-8A0070AFE3E7</keyObject>
+<referredKeyID>61D7993F-1EC8-8979-8C30-8A0070AFE3E7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

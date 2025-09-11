@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E198DDC-7E97-C4C3-296F-5ABCA399CBC0" name="devolucion">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="obrero_id" id="44C1E573-6F65-6603-3288-AFD73FF81135">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A33E5551-E527-C1F6-9011-BA6BE56E0227" referredColumn="B7DCCFA4-CFA2-4827-067D-2F1988A626DF"/>
+</associations>
+</Column>
+<Column name="bodeguero_id" id="ADAF6CE1-7DCA-7BE7-D755-062809915E2A">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97F0920C-6B2A-34EE-332D-DDE46A37AD7A" referredColumn="72D001CE-778E-1A53-3006-56CE767459E6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B4F66F3-355A-3882-799A-3FF79ACFEF5F" name="devolucion_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44C1E573-6F65-6603-3288-AFD73FF81135"/>
+<colUsage columnID="ADAF6CE1-7DCA-7BE7-D755-062809915E2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88A72E9D-D05F-6F75-6B0A-BAC13A636BF8" name="devolucion_obrero_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>68EF3788-872E-2487-8201-381DF94AA830</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44C1E573-6F65-6603-3288-AFD73FF81135"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23EE1380-9EA2-3DAC-4B2F-5F19EEF368E3" name="devolucion_bodeguero_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>68EF3788-872E-2487-8201-381DF94AA830</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADAF6CE1-7DCA-7BE7-D755-062809915E2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

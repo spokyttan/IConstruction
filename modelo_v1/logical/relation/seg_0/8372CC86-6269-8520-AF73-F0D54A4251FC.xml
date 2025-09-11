@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bodega_material" directorySegmentName="seg_0" id="8372CC86-6269-8520-AF73-F0D54A4251FC">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:23:27 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<engineerTo>
+<item key="F1084645-35F3-E632-51ED-39CEA5362239" value="true"/>
+<item key="69045ACC-8242-588B-C8E8-355C465A6BB8" value="true"/>
+</engineerTo>
+<sourcePk>16EDB7F9-E8EF-68E8-26DC-13BC3B5DA2A3</sourcePk>
+<targetPk>19120487-2460-0438-90FF-2C9D59060FA9</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>6EA3A75C-8244-32F0-1F85-145EFE5B0B2F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4A6DDEF3-8B05-4524-EB95-A977263101D7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="id" id="C50AB549-2AF4-2F82-D3C8-E34050729B4B">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:23:42 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<engineerTo>
+<item key="F1084645-35F3-E632-51ED-39CEA5362239" value="true"/>
+<item key="69045ACC-8242-588B-C8E8-355C465A6BB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+</attribute>
+<attribute name="cantidad" id="C134BB4F-CC7A-4309-A51E-9BA019E24C75">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:23:52 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<engineerTo>
+<item key="F1084645-35F3-E632-51ED-39CEA5362239" value="true"/>
+<item key="69045ACC-8242-588B-C8E8-355C465A6BB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

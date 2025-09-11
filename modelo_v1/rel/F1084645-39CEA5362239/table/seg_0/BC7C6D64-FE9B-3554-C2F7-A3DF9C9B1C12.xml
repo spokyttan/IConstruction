@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC7C6D64-FE9B-3554-C2F7-A3DF9C9B1C12" name="herramienta">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>A1E08AC4-454A-FABC-91BA-044FC4913AD7</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3457049C-1C67-22D5-8DC0-2BCF25B24D6B">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>538BDED5-0FBF-6692-097E-EF0690240DE3</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="3F235651-3E30-13D0-C9CC-A790971EB46A">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>297AF204-40E4-58E7-B88A-D055FB7446CC</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="4B3AC640-57C5-9B21-4EEF-3FC66740DF1A">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>F72397FE-9544-2E84-DD2F-17A0D6B57B6C</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="herramienta_categoria_id" id="2EFB7F81-AEEC-0486-A943-00CAC68D35F9">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>C5F2E530-3E49-FC81-44CE-E23A1E0C548E</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D80FE85-5D1D-6CBB-C1CA-CCEFBA12DD6F" referredColumn="3DDEA854-A191-85B4-5468-7EDD7DC650AF"/>
+</associations>
+</Column>
+<Column name="herramienta_ubicacion_id" id="6EB77FA8-FD03-B105-5E55-ADE251CB136C">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>F9F28A1A-578E-3C9D-74F8-FE535BA1C64A</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF162074-EE44-9402-19CA-A7C8BF092FF1" referredColumn="DB550E9F-B0DD-C826-E51F-382E7A8ECEDA"/>
+</associations>
+</Column>
+<Column name="herramienta_marca_id" id="48CB1D6C-724E-B7B6-6BE6-51D725A6DB0E">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>3D59F020-2302-37A8-C3FD-8838BDFA0046</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="803F001F-1F7D-5B20-D0B8-42E3678B5209" referredColumn="42C695B1-7075-1419-5412-EAFFA8468E75"/>
+</associations>
+</Column>
+<Column name="herramienta_tipo_id" id="ACD7C11B-876E-E1E7-AD54-FAF13E6FD9D3">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>68F18B6D-F2EE-4550-62FC-7CF8F39BC210</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D60406D2-58AE-B098-AA42-6E3EBCE812CE" referredColumn="306FA7F9-5409-03FE-6066-A417A8DB3F11"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2330F36-D3B6-2478-A7E9-34EE5951587D" name="herramienta_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>95D8635C-B0CB-1600-92B7-5B1C068421D9</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3457049C-1C67-22D5-8DC0-2BCF25B24D6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="453062A4-5574-1F68-284D-BC8A687ABCD7" name="herramienta_herramienta_categoria_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>197A74F1-14B4-5DCD-DBCC-002B8856365E</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFB7F81-AEEC-0486-A943-00CAC68D35F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5060B8E0-7ED7-4970-1670-D7CDD04550D6" name="herramienta_herramienta_ubicacion_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>B0B97940-5C19-F992-BDFE-AEAC454D5B06</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EB77FA8-FD03-B105-5E55-ADE251CB136C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E90085B-BD33-CC5A-16C2-20F23A7503B1" name="herramienta_herramienta_marca_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>443556D8-095C-C7E9-8B5E-5F38398BDA03</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48CB1D6C-724E-B7B6-6BE6-51D725A6DB0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33167A35-6888-2455-3613-22FD73171C27" name="herramienta_herramienta_tipo_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>F34685CB-E8F1-0768-DAD2-866DA3565CFD</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACD7C11B-876E-E1E7-AD54-FAF13E6FD9D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

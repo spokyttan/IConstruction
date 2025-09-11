@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAAD20C8-70D8-9EBE-34D8-7296E081924A" name="bodeguero">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>C9018477-9E2E-1599-664E-2BBB2B2E2212</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="72D001CE-778E-1A53-3006-56CE767459E6">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>731669BC-D060-3C6B-7868-B4FC029675B1</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="7E9C6C4D-E040-EAB7-77D7-3E81FD14373D">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>6F53C598-1B00-84B9-EF33-F4D29B3C17D4</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="EBAB6952-596D-0902-F8F0-49802A6EDB5E">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>E93415B6-41AE-10AB-80C7-09733D9E7D2B</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="9D29C00F-4CE0-0FA1-EBDF-6F1C1E43CAFA">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>B8E60C6C-049A-4DF8-90C4-79A470E629E1</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bodeguero_turno_id" id="9C89CA49-568E-B205-D0C5-01DC353AE63C">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>1FD006B6-1FD8-4FE1-44ED-EA0FDE23CFFF</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65BAB620-E927-0FE3-8656-ACF3B2ABD0BD" referredColumn="F5684E15-E1CE-C7F3-FAEF-F66610EFF2D9"/>
+</associations>
+</Column>
+<Column name="usuario_id" id="AB74F6A7-5F9B-F3F0-AA35-D3AFC964236A">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>9B0E29FD-CA9F-5CC6-426A-ACC409C1B123</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44BA3292-D284-7E9A-0D3C-108D1FF7DAC9" referredColumn="A8A613BA-9D17-2094-084D-4EFCC37F751A"/>
+</associations>
+</Column>
+<Column name="bodega_id" id="CB759B40-4C88-8B99-5A4E-C59CA0923AC9">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>D4BAB515-C6A5-070A-8E12-F497A51C1074</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E365122-AF12-285E-4190-4E80AC85FA87" referredColumn="F536A9BA-43E7-2D9D-3C08-661F0B3A30EA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="541E7661-35F8-5543-B43B-BA16176A9DA9" name="bodeguero_PK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>8562B4B7-D6B3-1E10-C8E5-DA729F78257A</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72D001CE-778E-1A53-3006-56CE767459E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A85EEEE9-66D3-75D0-E512-A52C1ECE8DAB" name="bodeguero__IDX">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1300D61A-8E4E-50F1-FB73-DFA1EB496A49</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AB74F6A7-5F9B-F3F0-AA35-D3AFC964236A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6927A4F2-16C4-46D9-763E-B1C9B6D90C47" name="bodeguero__IDXv1">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ABEA73A1-5507-E587-CA47-7DEF31875B67</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CB759B40-4C88-8B99-5A4E-C59CA0923AC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DD1A38A-0603-F0BE-D2E2-962142252883" name="bodeguero_bodeguero_turno_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>0A2888BC-B5EB-3B45-CD63-0E2D057B0E78</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C89CA49-568E-B205-D0C5-01DC353AE63C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32091564-4E0A-6200-69FB-F79390A9AE0E" name="bodeguero_usuario_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>1300D61A-8E4E-50F1-FB73-DFA1EB496A49</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB74F6A7-5F9B-F3F0-AA35-D3AFC964236A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE1605C2-882A-24EB-1913-245450189600" name="bodeguero_bodega_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>ABEA73A1-5507-E587-CA47-7DEF31875B67</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB759B40-4C88-8B99-5A4E-C59CA0923AC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

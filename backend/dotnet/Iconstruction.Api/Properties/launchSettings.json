@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Iconstruction.Api": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ORACLE__USER": "ICONST_DEV",
+        "ORACLE__PASSWORD": "iconst_dev_pwd",
+        "ORACLE__CONNECTSTRING": "localhost:1521/XEPDB1",
+        "JWT__KEY": "dev-key-change-me",
+        "JWT__ISSUER": "IConstruction",
+        "JWT__AUDIENCE": "IConstructionClients"
+      }
+    }
+  }
+}

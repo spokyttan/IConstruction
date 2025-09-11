@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97F0920C-6B2A-34EE-332D-DDE46A37AD7A" containerWithKeyObject="9E198DDC-7E97-C4C3-296F-5ABCA399CBC0" localFKIndex="23EE1380-9EA2-3DAC-4B2F-5F19EEF368E3" name="devolucion_bodeguero_FK">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:52:35 UTC</createdTime>
+<generatorID>68EF3788-872E-2487-8201-381DF94AA830</generatorID>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<referredTableLongName>bodeguero</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CAAD20C8-70D8-9EBE-34D8-7296E081924A</referredTableID>
+<keyObject>541E7661-35F8-5543-B43B-BA16176A9DA9</keyObject>
+<referredKeyID>541E7661-35F8-5543-B43B-BA16176A9DA9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

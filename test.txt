@@ -1,0 +1,4 @@
+$env:ORACLE__USER="ICONST_DEV"
+$env:ORACLE__PASSWORD="iconst_dev_pwd"
+$env:ORACLE__CONNECTSTRING="localhost:1521/XEPDB1"
+dotnet run --project "C:\Users\natta\OneDrive - INACAP\Documentos\IConstruction\backend\dotnet\Iconstruction.Api\Iconstruction.Api.csproj"

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="prestamo" directorySegmentName="seg_0" id="932366A3-79D2-EA6A-7127-2AA65C77BD57">
+<createdBy>CASACENTRAL</createdBy>
+<createdTime>2025-09-10 01:47:11 UTC</createdTime>
+<ownerDesignName>modelo_v1</ownerDesignName>
+<engineerTo>
+<item key="F1084645-35F3-E632-51ED-39CEA5362239" value="true"/>
+<item key="69045ACC-8242-588B-C8E8-355C465A6BB8" value="true"/>
+</engineerTo>
+<sourcePk>AEE78A77-96B3-38B0-D752-7AC62825EC68</sourcePk>
+<targetPk>8562B4B7-D6B3-1E10-C8E5-DA729F78257A</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>079654A1-C28C-ACDB-F544-1CE3C670AC99</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C9018477-9E2E-1599-664E-2BBB2B2E2212</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
