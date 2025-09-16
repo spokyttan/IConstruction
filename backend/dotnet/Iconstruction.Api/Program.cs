@@ -5,6 +5,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Oracle.ManagedDataAccess.Client;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Cryptography;
+using System.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -84,7 +87,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ClockSkew = TimeSpan.FromMinutes(2)
         };
     });
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly", policy =>
+        policy.RequireAssertion(ctx =>
+            ctx.User.IsInRole("Administrador") ||
+            ctx.User.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "1") ||
+            ctx.User.Claims.Any(c => c.Type == "role_id" && c.Value == "1")
+        )
+    );
+});
 
 var app = builder.Build();
 
@@ -94,6 +106,8 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "IConstruction API v1");
 });
 
+// Serve static files from wwwroot (frontend pages)
+app.UseStaticFiles();
 app.UseCors("frontend");
 
 // Global error handling
@@ -166,27 +180,130 @@ app.MapGet("/health/config", () =>
     });
 }).AllowAnonymous();
 
+// TEMP: Lista tablas del usuario actual (para diagnosticar ORA-00942)
+app.MapGet("/health/user-tables", async (OracleConnection conn) =>
+{
+    await using (conn)
+    {
+        await conn.OpenAsync();
+        using var cmd = new OracleCommand("SELECT table_name FROM user_tables ORDER BY table_name", conn);
+        using var rdr = await cmd.ExecuteReaderAsync();
+        var list = new List<string>();
+        while (await rdr.ReadAsync())
+        {
+            list.Add(rdr.GetString(0));
+        }
+        return Results.Ok(list);
+    }
+}).AllowAnonymous();
+
+// TEMP: Lista tablas accesibles relevantes (USUARIO, USUARIO_ROL)
+app.MapGet("/health/all-tables", async (OracleConnection conn) =>
+{
+    await using (conn)
+    {
+        await conn.OpenAsync();
+        using var cmd = new OracleCommand(@"SELECT owner, table_name
+                                           FROM all_tables
+                                           WHERE table_name IN ('USUARIO','USUARIO_ROL')
+                                           ORDER BY owner, table_name", conn);
+        using var rdr = await cmd.ExecuteReaderAsync();
+        var list = new List<object>();
+        while (await rdr.ReadAsync())
+        {
+            list.Add(new { owner = rdr.GetString(0), table = rdr.GetString(1) });
+        }
+        return Results.Ok(list);
+    }
+}).AllowAnonymous();
+
+// Información del usuario actual desde el token
+app.MapGet("/auth/me", (ClaimsPrincipal user) =>
+{
+    var id = user.FindFirstValue(JwtRegisteredClaimNames.Sub);
+    var name = user.FindFirstValue(ClaimTypes.Name);
+    var role = user.FindFirstValue(ClaimTypes.Role);
+    var roleId = user.Claims.FirstOrDefault(c => c.Type == "role_id")?.Value;
+    return Results.Ok(new { id, nombre = name, rol = role, rol_id = roleId });
+}).RequireAuthorization("AdminOnly");
+
+// Optional: establecer/actualizar contraseña (admin use). Provide userId + new password.
+app.MapPost("/auth/set-password", async (OracleConnection conn, SetPasswordRequest req) =>
+{
+    var hasher = new PasswordHasher<string>();
+    var hash = hasher.HashPassword(null!, req.nueva_password);
+    await using (conn)
+    {
+        await conn.OpenAsync();
+        using var cmd = new OracleCommand("UPDATE usuario SET password = :p_hash WHERE id = :p_id", conn) { BindByName = true };
+        cmd.Parameters.Add(new OracleParameter("p_hash", hash));
+        cmd.Parameters.Add(new OracleParameter("p_id", req.usuario_id));
+        var rows = await cmd.ExecuteNonQueryAsync();
+        return rows == 1 ? Results.NoContent() : Results.NotFound();
+    }
+}).RequireAuthorization();
+
 // Login simple (demo): busca usuario por correo y password plano
 app.MapPost("/auth/login", async (OracleConnection conn, LoginRequest req) =>
 {
     await using (conn)
     {
         await conn.OpenAsync();
-        using var cmd = new OracleCommand("SELECT id, nombre, usuario_rol_id FROM usuario WHERE correo = :p_correo AND password = :p_password AND activo = 'S'", conn);
+        // 1) Traer usuario por correo (y activo)
+    using var cmd = new OracleCommand(@"SELECT u.id, u.nombre, u.usuario_rol_id, u.password, COALESCE(r.nombre,'') AS rol_nombre
+                       FROM usuario u LEFT JOIN usuario_rol r ON r.id = u.usuario_rol_id
+                       WHERE u.correo = :p_correo AND u.activo = 'S'", conn);
         cmd.Parameters.Add(new OracleParameter("p_correo", req.correo));
-        cmd.Parameters.Add(new OracleParameter("p_password", req.password));
         using var rdr = await cmd.ExecuteReaderAsync();
         if (!await rdr.ReadAsync()) return Results.Unauthorized();
 
         var userId = Convert.ToInt32(rdr.GetValue(0));
         var name = rdr.GetString(1);
         var roleId = Convert.ToInt32(rdr.GetValue(2));
+    var storedPassword = rdr.IsDBNull(3) ? string.Empty : rdr.GetString(3);
+    var roleName = rdr.IsDBNull(4) ? string.Empty : rdr.GetString(4);
+
+        // 2) Verificar contraseña con hasher de Identity (PBKDF2) o aceptar legacy plano y migrar
+        var hasher = new PasswordHasher<string>();
+        bool authenticated = false;
+        bool needsUpgrade = false;
+
+        // Intentar verificar como hash de Identity primero
+        if (!string.IsNullOrEmpty(storedPassword) && storedPassword.StartsWith("AQAAAA", StringComparison.Ordinal))
+        {
+            var result = hasher.VerifyHashedPassword(null!, storedPassword, req.password);
+            authenticated = result == PasswordVerificationResult.Success || result == PasswordVerificationResult.SuccessRehashNeeded;
+            needsUpgrade = result == PasswordVerificationResult.SuccessRehashNeeded;
+        }
+        else
+        {
+            // Legacy options:
+            // a) Texto plano
+            // b) SHA-256 en HEX (RAWTOHEX(STANDARD_HASH(...,'SHA256')))
+            var sha256Hex = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(req.password))); // UPPER HEX
+            authenticated = string.Equals(storedPassword, req.password, StringComparison.Ordinal)
+                            || string.Equals(storedPassword, sha256Hex, StringComparison.OrdinalIgnoreCase);
+            needsUpgrade = authenticated; // migraremos a Identity hash si autenticó
+        }
+
+        if (!authenticated) return Results.Unauthorized();
+
+        // 3) Si requiere upgrade, re-hashear y guardar
+        if (needsUpgrade)
+        {
+            var newHash = hasher.HashPassword(null!, req.password);
+            using var up = new OracleCommand("UPDATE usuario SET password = :p_hash WHERE id = :p_id", conn) { BindByName = true };
+            up.Parameters.Add(new OracleParameter("p_hash", newHash));
+            up.Parameters.Add(new OracleParameter("p_id", userId));
+            await up.ExecuteNonQueryAsync();
+        }
 
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
             new Claim(ClaimTypes.Name, name),
-            new Claim(ClaimTypes.Role, roleId.ToString())
+            new Claim(ClaimTypes.Role, string.IsNullOrWhiteSpace(roleName) ? roleId.ToString() : roleName),
+            new Claim("role_id", roleId.ToString())
         };
         var creds = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
         var token = new JwtSecurityToken(
@@ -197,7 +314,7 @@ app.MapPost("/auth/login", async (OracleConnection conn, LoginRequest req) =>
             signingCredentials: creds);
         var tokenStr = new JwtSecurityTokenHandler().WriteToken(token);
 
-        return Results.Ok(new { token = tokenStr });
+    return Results.Ok(new { token = tokenStr, user = new { id = userId, nombre = name, rol = string.IsNullOrWhiteSpace(roleName) ? roleId.ToString() : roleName, rol_id = roleId } });
     }
 }).AllowAnonymous();
 
@@ -402,6 +519,8 @@ app.MapGet("/catalogos/obreros", async (OracleConnection conn) =>
         return Results.Ok(list);
     }
 }).RequireAuthorization();
+// Root endpoint -> redirect to Swagger UI for convenience
+app.MapGet("/", () => Results.Redirect("/swagger", permanent: false)).AllowAnonymous();
 // Devolución
 app.MapPost("/prestamos/{prestamoId:int}/devoluciones", async (int prestamoId, OracleConnection conn, DevolucionRequest req) =>
 {
@@ -428,3 +547,4 @@ public record PrestamoRequest(int obrero_id, int bodeguero_id, int bodega_id, Da
 public record DevolucionDetalle(int herramienta_id, int cantidad);
 public record DevolucionRequest(int bodega_id, List<DevolucionDetalle> detalle);
 public record LoginRequest(string correo, string password);
+public record SetPasswordRequest(int usuario_id, string nueva_password);

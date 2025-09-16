@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crear Préstamo - IConstruction</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h1 class="h4 mb-0">Crear Préstamo</h1>
+      <div>
+        <a class="btn btn-sm btn-outline-secondary" href="/index.html">Inicio</a>
+        <a class="btn btn-sm btn-outline-secondary" href="/stock.html">Stock</a>
+        <button id="logoutBtn" class="btn btn-sm btn-outline-danger">Salir</button>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="bodega">Bodega</label>
+            <select id="bodega" class="form-control"></select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="proyecto">Proyecto</label>
+            <select id="proyecto" class="form-control"></select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="obrero">Obrero</label>
+            <select id="obrero" class="form-control"></select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="bodeguero">Bodeguero</label>
+            <select id="bodeguero" class="form-control"></select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="tipo">Tipo</label>
+            <select id="tipo" class="form-control">
+              <option value="herramienta">Herramienta</option>
+              <option value="material">Material</option>
+            </select>
+          </div>
+          <div class="form-group col-md-7">
+            <label for="item">Ítem</label>
+            <select id="item" class="form-control"></select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="cantidad">Cantidad</label>
+            <input id="cantidad" class="form-control" type="text" value="1" />
+          </div>
+          <div class="form-group col-md-1 d-flex align-items-end">
+            <button id="addBtn" class="btn btn-primary btn-block">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2 class="h6">Detalle</h2>
+        <table class="table table-sm table-striped" id="tblDetalle">
+          <thead><tr><th>Tipo</th><th>Ítem</th><th>Cantidad</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <div class="text-right">
+          <button id="submitBtn" class="btn btn-success">Crear Préstamo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      if(!window.location.origin){ window.location.origin = window.location.protocol + '//' + window.location.host; }
+      var BASE_URL = window.location.origin;
+      var detalle = [];
+
+      function getToken(){ return sessionStorage.getItem('token') || localStorage.getItem('token'); }
+      function authHeader(xhr){ var t = getToken(); if(t) xhr.setRequestHeader('Authorization','Bearer ' + t); }
+      function ensureAuth(){ if(!getToken()){ window.location.href='/login.html'; } }
+      function logout(){ try{ sessionStorage.removeItem('token'); localStorage.removeItem('token'); }catch(e){} window.location.href='/login.html'; }
+
+      function loadCatalog(endpoint, selectId){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', BASE_URL + endpoint);
+        authHeader(xhr);
+        xhr.onreadystatechange = function(){
+          if(xhr.readyState===4 && xhr.status===200){
+            try{
+              var data = JSON.parse(xhr.responseText)||[];
+              var sel = document.getElementById(selectId);
+              sel.innerHTML='';
+              for(var i=0;i<data.length;i++){
+                var o=document.createElement('option'); o.value=data[i].id; o.text=data[i].nombre; sel.appendChild(o);
+              }
+            }catch(e){}
+          }
+        };
+        xhr.send();
+      }
+
+      function loadItems(){
+        var tipo = document.getElementById('tipo').value;
+        var endpoint = tipo==='herramienta' ? '/catalogos/herramientas' : '/catalogos/materiales';
+        loadCatalog(endpoint, 'item');
+      }
+
+      function renderDetalle(){
+        var tb = document.querySelector('#tblDetalle tbody');
+        tb.innerHTML='';
+        for(var i=0;i<detalle.length;i++){
+          var d = detalle[i];
+          var tr = document.createElement('tr');
+          tr.innerHTML = '<td>'+ d.tipo +'</td>'+
+                         '<td>'+ d.nombre +'</td>'+
+                         '<td>'+ d.cantidad +'</td>'+
+                         '<td class="text-right">'+
+                           '<button data-i="'+i+'" class="btn btn-sm btn-outline-danger delBtn">Quitar</button>'+
+                         '</td>';
+          tb.appendChild(tr);
+        }
+        var btns = document.getElementsByClassName('delBtn');
+        for(var j=0;j<btns.length;j++){
+          btns[j].addEventListener('click', function(ev){
+            var idx = parseInt(ev.target.getAttribute('data-i'),10);
+            if(!isNaN(idx)){ detalle.splice(idx,1); renderDetalle(); }
+          });
+        }
+      }
+
+      function addDetalle(){
+        var tipo = document.getElementById('tipo').value;
+        var itemSel = document.getElementById('item');
+        var itemId = itemSel.value;
+        var itemText = itemSel.options.length>0 ? itemSel.options[itemSel.selectedIndex].text : '';
+        var cantidad = parseInt(document.getElementById('cantidad').value,10);
+        if(isNaN(cantidad) || cantidad<=0){ alert('Cantidad inválida'); return; }
+        detalle.push({ tipo: tipo, id: parseInt(itemId,10), nombre: itemText, cantidad: cantidad });
+        renderDetalle();
+        document.getElementById('cantidad').value = '1';
+      }
+
+      function submitPrestamo(){
+        if(detalle.length===0){ alert('Agrega al menos un ítem'); return; }
+        var body = {
+          bodega_id: parseInt(document.getElementById('bodega').value,10),
+          proyecto_id: parseInt(document.getElementById('proyecto').value,10),
+          obrero_id: parseInt(document.getElementById('obrero').value,10),
+          bodeguero_id: parseInt(document.getElementById('bodeguero').value,10),
+          detalle: detalle
+        };
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', BASE_URL + '/prestamos');
+        xhr.setRequestHeader('Content-Type','application/json');
+        authHeader(xhr);
+        xhr.onreadystatechange = function(){
+          if(xhr.readyState===4){
+            if(xhr.status===200 || xhr.status===201){
+              alert('Préstamo creado');
+              detalle = []; renderDetalle();
+            } else {
+              alert('Error al crear: ' + xhr.status + ' ' + (xhr.responseText||''));
+            }
+          }
+        };
+        try{ xhr.send(JSON.stringify(body)); }catch(e){ alert('Error de envío'); }
+      }
+
+      document.getElementById('logoutBtn').addEventListener('click', logout);
+      document.getElementById('tipo').addEventListener('change', loadItems);
+      document.getElementById('addBtn').addEventListener('click', function(e){ e.preventDefault?e.preventDefault():null; addDetalle(); });
+      document.getElementById('submitBtn').addEventListener('click', function(e){ e.preventDefault?e.preventDefault():null; submitPrestamo(); });
+
+      ensureAuth();
+      loadCatalog('/catalogos/bodegas','bodega');
+      loadCatalog('/catalogos/proyectos','proyecto');
+      loadCatalog('/catalogos/obreros','obrero');
+      loadCatalog('/catalogos/bodegueros','bodeguero');
+      loadItems();
+    })();
+  </script>
+</body>
+</html>

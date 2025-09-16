@@ -1,0 +1,87 @@
+### IConstruction API requests (use VS Code REST Client or similar)
+# Base URL (adjust if needed)
+@base = http://localhost:8080
+
+### 1) Health
+GET {{base}}/health
+
+### 2) Health - Config (env vars loaded by API)
+GET {{base}}/health/config
+
+### 3) Health - DB session
+GET {{base}}/health/db
+
+### 4) Login (admin)
+# Response body will contain: { token, user: { id, nombre, rol, rol_id } }
+POST {{base}}/auth/login
+Content-Type: application/json
+
+{
+  "correo": "admin@iconstruction.cl",
+  "password": "admin123"
+}
+
+### 5) Save token to variable (VS Code REST Client feature)
+@token = {{token}}
+# If your REST client doesn't auto-bind, copy the token from the previous response and set:
+# @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+### 6) Who am I
+GET {{base}}/auth/me
+Authorization: Bearer {{token}}
+
+### 7) Catálogos - Bodegas
+GET {{base}}/catalogos/bodegas
+Authorization: Bearer {{token}}
+
+### 8) Catálogos - Herramientas
+GET {{base}}/catalogos/herramientas
+Authorization: Bearer {{token}}
+
+### 9) Catálogos - Obreros
+GET {{base}}/catalogos/obreros
+Authorization: Bearer {{token}}
+
+### 10) Stock - Herramientas (bodega 1)
+GET {{base}}/stock/herramientas?bodega_id=1
+Authorization: Bearer {{token}}
+
+### 11) Stock - Materiales (bodega 1)
+GET {{base}}/stock/materiales?bodega_id=1
+Authorization: Bearer {{token}}
+
+### 12) Crear préstamo (ejemplo)
+POST {{base}}/prestamos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "obrero_id": 1,
+  "bodeguero_id": 1,
+  "bodega_id": 1,
+  "fecha_compromiso": "2025-09-20T12:00:00Z",
+  "detalle": [
+    { "herramienta_id": 1, "cantidad": 1 }
+  ]
+}
+
+### 13) Ver préstamos detalle (filtros opcionales)
+GET {{base}}/prestamos/detalle?obrero_id=1
+Authorization: Bearer {{token}}
+
+### 14) Devolución de préstamo (ejemplo)
+# Reemplaza :id con el id retornado por crear préstamo
+POST {{base}}/prestamos/1/devoluciones
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "bodega_id": 1,
+  "detalle": [
+    { "herramienta_id": 1, "cantidad": 1 }
+  ]
+}
+
+### 15) Reportes por proyecto
+GET {{base}}/reportes/proyecto/1
+Authorization: Bearer {{token}}

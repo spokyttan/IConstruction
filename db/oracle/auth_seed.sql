@@ -38,8 +38,18 @@ DECLARE
       RAISE_APPLICATION_ERROR(-20001, 'Conflicto de RUT para '||p_correo||' (rut='||p_rut||') ya existe con otro correo.');
   END;
 BEGIN
-  upsert_usuario('11.111.111-1','Admin','admin@iconstruction.cl','admin123',1,1);
-  upsert_usuario('22.222.222-2','Operador','operador@iconstruction.cl','operador123',1,2);
+  -- Generate SHA-256 hashes for initial passwords
+  -- Note: Will be auto-migrated to ASP.NET Identity hash on first successful login
+  DECLARE
+    v_admin_hash VARCHAR2(64);
+    v_oper_hash  VARCHAR2(64);
+  BEGIN
+    v_admin_hash := STANDARD_HASH('admin123','SHA256');
+    v_oper_hash  := STANDARD_HASH('operador123','SHA256');
+
+    upsert_usuario('11.111.111-1','Admin','admin@iconstruction.cl',v_admin_hash,1,1);
+    upsert_usuario('22.222.222-2','Operador','operador@iconstruction.cl',v_oper_hash,1,2);
+  END;
   COMMIT;
 END;
 /

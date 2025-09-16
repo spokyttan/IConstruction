@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stock - IConstruction</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h1 class="h4 mb-0">Stock</h1>
+      <div>
+        <a class="btn btn-sm btn-outline-secondary" href="/index.html">Inicio</a>
+        <button id="logoutBtn" class="btn btn-sm btn-outline-danger">Salir</button>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="bodega">Bodega</label>
+            <select id="bodega" class="form-control"></select>
+          </div>
+          <div class="form-group col-md-8 d-flex align-items-end">
+            <button id="loadStockBtn" class="btn btn-primary mr-2">Cargar Herramientas</button>
+            <button id="loadStockMatBtn" class="btn btn-secondary">Cargar Materiales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="h5">Herramientas</h2>
+        <table class="table table-sm table-striped" id="tblHerr">
+          <thead><tr><th>Bodega</th><th>Herramienta</th><th>Cantidad</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <h2 class="h5">Materiales</h2>
+        <table class="table table-sm table-striped" id="tblMat">
+          <thead><tr><th>Bodega</th><th>Material</th><th>Cantidad</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      if(!window.location.origin){ window.location.origin = window.location.protocol + '//' + window.location.host; }
+      var BASE_URL = window.location.origin;
+      function getToken(){ return sessionStorage.getItem('token') || localStorage.getItem('token'); }
+      function authHeader(xhr){ var t = getToken(); if(t) xhr.setRequestHeader('Authorization','Bearer ' + t); }
+      function ensureAuth(){ if(!getToken()){ window.location.href='/login.html'; } }
+      function logout(){ try{ sessionStorage.removeItem('token'); localStorage.removeItem('token'); }catch(e){} window.location.href='/login.html'; }
+
+      function loadBodegas(){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', BASE_URL + '/catalogos/bodegas'); authHeader(xhr);
+        xhr.onreadystatechange = function(){ if(xhr.readyState===4 && xhr.status===200){ try{
+          var data = JSON.parse(xhr.responseText)||[]; var sel = document.getElementById('bodega'); sel.innerHTML='';
+          for(var i=0;i<data.length;i++){ var o=document.createElement('option'); o.value=data[i].id; o.text=data[i].nombre; sel.appendChild(o);} }catch(e){}
+        }}; xhr.send();
+      }
+
+      function renderTable(tbodyId, rows){
+        var tb = document.querySelector(tbodyId); tb.innerHTML='';
+        for(var i=0;i<rows.length;i++){
+          var tr = document.createElement('tr');
+          var r = rows[i];
+          tr.innerHTML = '<td>'+ (r.bodega || '') +'</td>'+
+                         '<td>'+ (r.herramienta || r.material || '') +'</td>'+
+                         '<td>'+ (r.cantidad || 0) +'</td>';
+          tb.appendChild(tr);
+        }
+      }
+
+      function loadStock(endpoint, tbodyId){
+        var bodegaId = document.getElementById('bodega').value;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', BASE_URL + endpoint + '?bodega_id=' + encodeURIComponent(bodegaId)); authHeader(xhr);
+        xhr.onreadystatechange = function(){ if(xhr.readyState===4){ if(xhr.status===200){ try{ renderTable(tbodyId, JSON.parse(xhr.responseText)||[]);}catch(e){} }}}
+        xhr.send();
+      }
+
+      document.getElementById('loadStockBtn').addEventListener('click', function(){ loadStock('/stock/herramientas', '#tblHerr tbody'); });
+      document.getElementById('loadStockMatBtn').addEventListener('click', function(){ loadStock('/stock/materiales', '#tblMat tbody'); });
+      document.getElementById('logoutBtn').addEventListener('click', logout);
+
+      ensureAuth();
+      loadBodegas();
+    })();
+  </script>
+</body>
+</html>
