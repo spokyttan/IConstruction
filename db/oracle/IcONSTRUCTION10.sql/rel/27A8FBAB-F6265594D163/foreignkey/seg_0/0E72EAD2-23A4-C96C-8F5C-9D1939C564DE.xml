@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0E72EAD2-23A4-C96C-8F5C-9D1939C564DE" containerWithKeyObject="3DF0F1C5-423B-0651-3AFD-8939D981D3B4" localFKIndex="7C670E77-1214-83D3-2746-0571626576D1" name="MATERIAL_MATERIAL_MARCA_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MATERIAL_MATERIAL_MARCA_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.MATERIAL_MARCA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C20AF2D-3B82-490A-2D9E-40D06C912D2F</referredTableID>
+<keyObject>019960AA-6563-01EC-7487-1498314F6FB2</keyObject>
+<referredKeyID>019960AA-6563-01EC-7487-1498314F6FB2</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

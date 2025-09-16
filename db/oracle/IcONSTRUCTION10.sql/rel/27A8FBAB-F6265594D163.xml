@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="27A8FBAB-93D4-71AA-AFF0-F6265594D163" mainViewID="ABDC1BB9-30A6-6849-9FC5-B376CDC86119">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:16:33 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>ICONSTRUCTION</connName>
+<connUser>SYSTEM</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

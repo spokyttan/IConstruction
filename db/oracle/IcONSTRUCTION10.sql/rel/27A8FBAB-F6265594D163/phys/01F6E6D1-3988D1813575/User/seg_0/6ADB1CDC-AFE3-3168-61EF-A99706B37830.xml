@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="SYSTEM" directorySegmentName="seg_0" id="6ADB1CDC-AFE3-3168-61EF-A99706B37830">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjName>SYSTEM</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:33 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+</UserOraclev10g>

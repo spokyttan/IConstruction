@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="HERRAMIENTA_MARCA" directorySegmentName="seg_0" id="BFB9864A-7077-0DB7-BD44-4E14A5FBC8EB">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>498A3E8A-FE98-1E63-F5CF-E030A2760A4D</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="06DE941B-33CC-C636-E178-ED032EAB2F69">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="51EC42F3-2F7C-CD92-000B-1EBCDBE06D4F">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="ACTIVO" id="A317FA98-FB03-160A-8914-564982F54A65">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="HERRAMIENTA_MARCA_PK" id="A8DCC3A3-9DB6-A3B7-8DA2-0AFC67360577">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:40 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<indexSegment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

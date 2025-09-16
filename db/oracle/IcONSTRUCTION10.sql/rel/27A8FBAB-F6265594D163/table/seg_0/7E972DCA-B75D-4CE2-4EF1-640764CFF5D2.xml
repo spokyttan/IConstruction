@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E972DCA-B75D-4CE2-4EF1-640764CFF5D2" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="OBRERO">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>OBRERO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9C93EFA2-DBCD-0BA7-C029-B39C62BF5743">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>OBRERO</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>obrero_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>OBRERO_BI</autoIncrementTriggerName>
+</Column>
+<Column name="ACTIVO" id="9FFD0043-D6E3-CE5C-A080-8BD2C16FEF75">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>OBRERO</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<constraintName>OBRERO_ACTIVO_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BODEGUERO_CARGO_ID" id="7C56F973-1F91-C6CC-0B63-A514DAEDF7EE">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>OBRERO</sourceObjSchema>
+<sourceObjName>BODEGUERO_CARGO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE6C97DD-07C0-52FC-0DE2-38267B77517B" referredColumn="7B585A09-38AF-D51F-9199-62142236A5E7"/>
+</associations>
+</Column>
+<Column name="PRESTAMO_ESTADO_ID" id="BA9EFAB4-2B50-455E-B902-6EB099042A7B">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>OBRERO</sourceObjSchema>
+<sourceObjName>PRESTAMO_ESTADO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE01BEAB-9E32-024D-3498-822D2E4D819C" referredColumn="95BAF9C6-CCF1-1B8B-D868-4F245B308C48"/>
+</associations>
+</Column>
+<Column name="USUARIO_ID" id="168BF3A3-56C8-6A48-B14C-7937D986753F">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>OBRERO</sourceObjSchema>
+<sourceObjName>USUARIO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="766093E5-9126-50CB-AFA6-B8A9EFF68E05" referredColumn="C3BD0430-C24E-8C70-DA5A-9F3ACF19493B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1CE8E7FA-0DA3-EC01-92B3-6C659A027236" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="OBRERO_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008405</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C93EFA2-DBCD-0BA7-C029-B39C62BF5743"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98C2F19F-AC3E-B266-6AF0-33F2CE461A9E" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="OBRERO_CARGO_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>OBRERO_CARGO_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C56F973-1F91-C6CC-0B63-A514DAEDF7EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF2AF342-43F0-43A2-30A5-5B4956868F0B" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="OBRERO__IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>OBRERO__IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="168BF3A3-56C8-6A48-B14C-7937D986753F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04F5ADCE-FB52-4834-9E89-31391A1F8A6B" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="OBRERO_PRESTAMO_ESTADO_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>OBRERO_PRESTAMO_ESTADO_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA9EFAB4-2B50-455E-B902-6EB099042A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="587A73F4-08D7-8734-9751-904588E929B1" name="OBRERO_BODEGUERO_CARGO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C56F973-1F91-C6CC-0B63-A514DAEDF7EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B8F05AB-FCA0-E333-64E4-2E653BC6A7D4" name="OBRERO_PRESTAMO_ESTADO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA9EFAB4-2B50-455E-B902-6EB099042A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A05F5194-517C-AE34-22C6-D02B45093515" name="OBRERO_USUARIO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="168BF3A3-56C8-6A48-B14C-7937D986753F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9815C2B-1683-04A0-4902-C6A044A68D52" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_UBICACION">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_UBICACION</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="59CF32B1-75D4-A83A-E685-B2DBB9BF12F9">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA_UBICACION</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>herramienta_ubicacion_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>HERRAMIENTA_UBICACION_BI</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="759E96F0-9856-50E0-8813-B1808EC9A055">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA_UBICACION</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="7120D2C8-8E80-4FF4-D267-58FC40D067E2">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA_UBICACION</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<constraintName>HERRAMIENTA_UBICACION_ACTIVO_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60D49A4E-091C-50B2-15E3-3325DFD42009" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_UBICACION_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008372</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59CF32B1-75D4-A83A-E685-B2DBB9BF12F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

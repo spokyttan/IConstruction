@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D0BD2BE-EBF6-02DD-F0FA-CDBF0279894F" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="BODEGAS_HERRAMIENTAS">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BODEGAS_HERRAMIENTAS</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HERRAMIENTA_ID" id="A512EEC1-7F5F-F0D1-0DD8-5E494629BCBE">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>BODEGAS_HERRAMIENTAS</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="431C01D2-8C87-5C12-C040-6FE1E5E8C449" referredColumn="726A8B20-3ACA-E10A-1782-C2BBC500227B"/>
+</associations>
+</Column>
+<Column name="BODEGA_ID" id="1D6DCF2A-FB39-A558-7DF0-6817254316A5">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>BODEGAS_HERRAMIENTAS</sourceObjSchema>
+<sourceObjName>BODEGA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65981957-B043-9E90-1EA1-1CC55D0E3B1D" referredColumn="64C3E7FF-EF63-0837-7630-B2BE34148F29"/>
+</associations>
+</Column>
+<Column name="ID" id="D6FB4AD8-173A-6DAF-44D6-58EA467F5AD1">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>BODEGAS_HERRAMIENTAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD" id="E0019541-1240-4DF4-077E-AB7E532AC9A4">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>BODEGAS_HERRAMIENTAS</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B696EEA9-8571-24F9-017D-9724A17956B5" name="BODEGAS_HERRAMIENTAS_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BODEGAS_HERRAMIENTAS_PK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:40 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A512EEC1-7F5F-F0D1-0DD8-5E494629BCBE"/>
+<colUsage columnID="1D6DCF2A-FB39-A558-7DF0-6817254316A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2DB846D-3B96-FCA0-3FEE-5992F3DB69D9" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="BODEGAS_HERRAMIENTAS_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BODEGAS_HERRAMIENTAS_PK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A512EEC1-7F5F-F0D1-0DD8-5E494629BCBE"/>
+<colUsage columnID="1D6DCF2A-FB39-A558-7DF0-6817254316A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B553E320-28BF-2D4A-3610-1EF7F73EB733" name="BODEGAS_HERRAMIENTAS_BODEGA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D6DCF2A-FB39-A558-7DF0-6817254316A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAADF5BA-1F5C-D85F-6536-A42BA496D93B" name="BODEGAS_HERRAMIENTAS_HERRAMIENTA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A512EEC1-7F5F-F0D1-0DD8-5E494629BCBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

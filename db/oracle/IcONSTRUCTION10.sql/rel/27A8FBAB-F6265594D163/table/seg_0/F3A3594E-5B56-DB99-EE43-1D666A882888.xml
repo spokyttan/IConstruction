@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3A3594E-5B56-DB99-EE43-1D666A882888" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PRESTAMO_DETALLE">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO_DETALLE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6452D825-57DD-3FA5-EE2A-5CDC3E8BFAC2">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO_DETALLE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>prestamo_detalle_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>PRESTAMO_DETALLE_BI</autoIncrementTriggerName>
+</Column>
+<Column name="PRESTAMO_ID" id="B39EEC27-F5EB-8732-8728-FCCFD396C0F2">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO_DETALLE</sourceObjSchema>
+<sourceObjName>PRESTAMO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DA4B05B-793C-AE6A-1165-C40BCD5503CC" referredColumn="593922D0-92BE-6FEB-97E3-F8E14F45680A"/>
+</associations>
+</Column>
+<Column name="HERRAMIENTA_ID" id="21EF53C0-C609-6278-CDF3-93A027BDED6F">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO_DETALLE</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D426C3CB-A5E4-4D12-3EC2-1F1064CFEFED" referredColumn="726A8B20-3ACA-E10A-1782-C2BBC500227B"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="7CACCF6F-81CA-5BDD-427E-880B7BBC7DA8">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO_DETALLE</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DEVOLUCION" id="9E46DC30-9006-0D92-9A4E-349D00856195">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO_DETALLE</sourceObjSchema>
+<sourceObjName>FECHA_DEVOLUCION</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="2626BD47-64B9-633F-E122-5BDD0840C68D">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO_DETALLE</sourceObjSchema>
+<sourceObjName>OBSERVACION</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="335BF360-512A-42EE-BF58-4191E411580E" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PRESTAMO_DETALLE_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008463</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6452D825-57DD-3FA5-EE2A-5CDC3E8BFAC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="931CE249-A965-69A7-41B7-2D55A72CC058" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PRESTAMO_DETALLE_HERRAMIENTA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO_DETALLE_HERRAMIENTA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21EF53C0-C609-6278-CDF3-93A027BDED6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FFB5056-56BD-FCE6-583F-16C01411FF28" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PRESTAMO_DETALLE_PRESTAMO_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO_DETALLE_PRESTAMO_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B39EEC27-F5EB-8732-8728-FCCFD396C0F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2BE4467-118E-BACE-F45B-96F87FB4AC0E" name="PRESTAMO_DETALLE_HERRAMIENTA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21EF53C0-C609-6278-CDF3-93A027BDED6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F613CD3-5462-8BF7-2783-0D896B4C3C74" name="PRESTAMO_DETALLE_PRESTAMO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B39EEC27-F5EB-8732-8728-FCCFD396C0F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

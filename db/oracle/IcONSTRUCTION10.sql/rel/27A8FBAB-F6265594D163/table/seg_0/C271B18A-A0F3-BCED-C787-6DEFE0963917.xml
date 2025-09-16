@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C271B18A-A0F3-BCED-C787-6DEFE0963917" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PRESTAMO">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBRERO_ID" id="F60AAD3A-7B6F-0947-3DE4-855FDC640320">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO</sourceObjSchema>
+<sourceObjName>OBRERO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="762B39FF-2361-D2CA-B910-D1DB49D4CCED" referredColumn="9C93EFA2-DBCD-0BA7-C029-B39C62BF5743"/>
+</associations>
+</Column>
+<Column name="BODEGUERO_ID" id="AEE66000-E399-FB42-34A6-7F5C1D7C3D95">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PRESTAMO</sourceObjSchema>
+<sourceObjName>BODEGUERO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3436D2F7-B9EA-8017-2A09-492FEC162DDE" referredColumn="A6460425-B3B5-8FCA-400B-16BC059684B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06502318-63C1-8210-FF13-56A3ED126C19" name="PRESTAMO_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO_PK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:40 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F60AAD3A-7B6F-0947-3DE4-855FDC640320"/>
+<colUsage columnID="AEE66000-E399-FB42-34A6-7F5C1D7C3D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0D0C31D-39A3-3D3C-EAE6-676017F58D10" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PRESTAMO_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO_PK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F60AAD3A-7B6F-0947-3DE4-855FDC640320"/>
+<colUsage columnID="AEE66000-E399-FB42-34A6-7F5C1D7C3D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C67B2A20-BEF1-B3B1-BCA7-14BE1296BB9D" name="PRESTAMO_BODEGUERO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEE66000-E399-FB42-34A6-7F5C1D7C3D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B32D2704-DCD7-F214-AC10-6648243CA643" name="PRESTAMO_OBRERO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F60AAD3A-7B6F-0947-3DE4-855FDC640320"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

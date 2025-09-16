@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8808C4C-6C76-199B-E471-B197C339D2F3" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PROYECTO_ACTIVIDAD">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PROYECTO_ACTIVIDAD</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3BC22D1F-23D2-4484-11C4-2A8DDCE0BBBD">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PROYECTO_ACTIVIDAD</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>proyecto_actividad_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>PROYECTO_ACTIVIDAD_BI</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="CF259B5C-0E7A-C3C8-1778-835855905CA2">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PROYECTO_ACTIVIDAD</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ENTREGA" id="ED9825FC-9778-489D-FE11-4035DF916ADC">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PROYECTO_ACTIVIDAD</sourceObjSchema>
+<sourceObjName>FECHA_ENTREGA</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORCENTAJE" id="49BEA5C1-082B-B46C-0C7C-98CD64AB708B">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PROYECTO_ACTIVIDAD</sourceObjSchema>
+<sourceObjName>PORCENTAJE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="1467EC4D-0D0B-43D2-CC4D-55C5162275D3">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PROYECTO_ACTIVIDAD</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<constraintName>PROYECTO_ACTIVIDAD_ACTIVO_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROYECTO_ID" id="0B7C7113-020D-1CDF-024C-8FC503999E53">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>PROYECTO_ACTIVIDAD</sourceObjSchema>
+<sourceObjName>PROYECTO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C3F6D1-0D43-20EE-2693-871D03FBB32E" referredColumn="D1BE0438-CEEF-A985-12DE-5B630546B38C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1095B5C6-60B1-59BD-ADF3-E0BECA70E23C" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PROYECTO_ACTIVIDAD_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008415</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BC22D1F-23D2-4484-11C4-2A8DDCE0BBBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E16A9BBD-FAF9-502A-1B98-02F89763A82C" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="PROYECTO_ACTIVIDAD_PROJ_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PROYECTO_ACTIVIDAD_PROJ_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B7C7113-020D-1CDF-024C-8FC503999E53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="234CE4BE-F5AC-6C6C-D0ED-2BCF1F7EA753" name="PROYECTO_ACTIVIDAD_PROYECTO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B7C7113-020D-1CDF-024C-8FC503999E53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

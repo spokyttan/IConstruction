@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="OBRERO" directorySegmentName="seg_0" id="7E972DCA-B75D-4CE2-4EF1-640764CFF5D2">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>498A3E8A-FE98-1E63-F5CF-E030A2760A4D</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USUARIO_ID" id="168BF3A3-56C8-6A48-B14C-7937D986753F">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BODEGUERO_CARGO_ID" id="7C56F973-1F91-C6CC-0B63-A514DAEDF7EE">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="9C93EFA2-DBCD-0BA7-C029-B39C62BF5743">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="ACTIVO" id="9FFD0043-D6E3-CE5C-A080-8BD2C16FEF75">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRESTAMO_ESTADO_ID" id="BA9EFAB4-2B50-455E-B902-6EB099042A7B">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="OBRERO_PRESTAMO_ESTADO_IDX" id="04F5ADCE-FB52-4834-9E89-31391A1F8A6B">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="OBRERO_CARGO_IDX" id="98C2F19F-AC3E-B266-6AF0-33F2CE461A9E">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="OBRERO__IDX" id="FF2AF342-43F0-43A2-30A5-5B4956868F0B">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OBRERO_BODEGUERO_CARGO_FK" id="587A73F4-08D7-8734-9751-904588E929B1">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OBRERO_PRESTAMO_ESTADO_FK" id="9B8F05AB-FCA0-E333-64E4-2E653BC6A7D4">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OBRERO_USUARIO_FK" id="A05F5194-517C-AE34-22C6-D02B45093515">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="OBRERO_PK" id="1CE8E7FA-0DA3-EC01-92B3-6C659A027236">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:40 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<indexSegment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

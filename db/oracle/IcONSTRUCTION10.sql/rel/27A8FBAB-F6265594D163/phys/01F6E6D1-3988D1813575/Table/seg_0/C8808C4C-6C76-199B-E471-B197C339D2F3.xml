@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PROYECTO_ACTIVIDAD" directorySegmentName="seg_0" id="C8808C4C-6C76-199B-E471-B197C339D2F3">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>498A3E8A-FE98-1E63-F5CF-E030A2760A4D</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PROYECTO_ID" id="0B7C7113-020D-1CDF-024C-8FC503999E53">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACTIVO" id="1467EC4D-0D0B-43D2-CC4D-55C5162275D3">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="3BC22D1F-23D2-4484-11C4-2A8DDCE0BBBD">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="PORCENTAJE" id="49BEA5C1-082B-B46C-0C7C-98CD64AB708B">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="CF259B5C-0E7A-C3C8-1778-835855905CA2">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_ENTREGA" id="ED9825FC-9778-489D-FE11-4035DF916ADC">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PROYECTO_ACTIVIDAD_PROJ_IDX" id="E16A9BBD-FAF9-502A-1B98-02F89763A82C">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PROYECTO_ACTIVIDAD_PROYECTO_FK" id="234CE4BE-F5AC-6C6C-D0ED-2BCF1F7EA753">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PROYECTO_ACTIVIDAD_PK" id="1095B5C6-60B1-59BD-ADF3-E0BECA70E23C">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:40 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<indexSegment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

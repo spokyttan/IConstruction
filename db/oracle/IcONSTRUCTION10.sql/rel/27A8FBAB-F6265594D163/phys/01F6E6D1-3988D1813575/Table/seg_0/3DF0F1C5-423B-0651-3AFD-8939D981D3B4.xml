@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="MATERIAL" directorySegmentName="seg_0" id="3DF0F1C5-423B-0651-3AFD-8939D981D3B4">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>498A3E8A-FE98-1E63-F5CF-E030A2760A4D</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MATERIAL_MARCA_ID" id="1FCEDFD1-CFF2-03FD-F14F-AB0AEBC59422">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="4CA71798-9BDA-1998-EE55-3103207DE312">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MATERIAL_CATEGORIA_ID" id="6446DEF7-389C-2437-E1E4-4FB8CD687CAB">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACTIVO" id="A253D223-690A-E961-6654-2DCF9AFB0475">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="F035F93A-301D-44C2-6DE1-1331BCC7700C">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="FECHA_VENCIMIENTO" id="F306B012-205B-A0A1-746C-83562C894742">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MATERIAL_TIPO_ID" id="F755C3A6-2480-B841-10AF-9667BEB3AB48">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MATERIAL_TIPO_IDX" id="1C2C812C-16C0-9C2E-BA42-C1BA9CF05D44">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MATERIAL_CATEGORIA_IDX" id="FFAE71A9-8321-0FB3-9721-C3CC5BB83F55">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MATERIAL_MARCA_IDX" id="FFB28045-A6D1-5C77-934E-9BCDB298C632">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MATERIAL_MATERIAL_MARCA_FK" id="7C670E77-1214-83D3-2746-0571626576D1">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MATERIAL_MATERIAL_CATEGORIA_FK" id="F83B2896-E74B-CE2A-5DC6-271DED44EF6E">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MATERIAL_MATERIAL_TIPO_FK" id="FD121FB7-31A5-254A-0914-4FFC1EE3199D">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MATERIAL_PK" id="E5D54D75-EC19-A2CB-7BC3-09FCBDF71FDE">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:40 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<schemaObject>8B5887EF-FA91-8685-474A-AB5B9CDC33AA</schemaObject>
+<segment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</segment>
+<tableSpace>0740D1C0-D0FD-71B2-8906-DF7573AA054F</tableSpace>
+<indexSegment>909799C3-918F-1356-DFD9-D0C4A0ED4F48</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

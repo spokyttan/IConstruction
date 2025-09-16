@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1081E28D-97E1-82C1-24C9-BBC696698A06" containerWithKeyObject="416056BF-02D2-18ED-1B52-49965465CA14" localFKIndex="019430F6-769B-B0A2-6A2E-7F2D49748D8A" name="PRESTAMO_CABECERA_ESTADO_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRESTAMO_CABECERA_ESTADO_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.PRESTAMO_ESTADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8731F126-C31D-0E6C-26C0-C35C26678A6B</referredTableID>
+<keyObject>78294023-99FD-CDA7-E177-DEE80F4C2E8B</keyObject>
+<referredKeyID>78294023-99FD-CDA7-E177-DEE80F4C2E8B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

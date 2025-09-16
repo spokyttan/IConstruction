@@ -1,0 +1,247 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1112778C-5FB8-B0DC-F1E5-DE276EDB8EFF" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="726A8B20-3ACA-E10A-1782-C2BBC500227B">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>herramienta_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>HERRAMIENTA_BI</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="1939A93D-5809-92EC-F18F-E68F60ADDB3D">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="1DDCE910-805C-B3B0-9F59-FABE4FFAC3FF">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<constraintName>HERRAMIENTA_ACTIVO_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HERRAMIENTA_CATEGORIA_ID" id="918C4C2F-0494-E8B0-98CD-C48560468318">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_CATEGORIA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B24BCF6F-87D6-678F-0E55-E03A0B3F7A12" referredColumn="93A21B05-DF03-3686-E594-578B96AB1A27"/>
+</associations>
+</Column>
+<Column name="HERRAMIENTA_UBICACION_ID" id="323EDDBA-1DCC-F058-79CB-4A5CFC1FF0D8">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_UBICACION_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9DC4164-C4FC-EA74-7B9A-867C65370647" referredColumn="59CF32B1-75D4-A83A-E685-B2DBB9BF12F9"/>
+</associations>
+</Column>
+<Column name="HERRAMIENTA_MARCA_ID" id="6FFDDBA2-8C19-0783-9880-DF7FB5A30CD9">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_MARCA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17D5CD95-AC52-0365-BDAD-7983C4123CB6" referredColumn="51EC42F3-2F7C-CD92-000B-1EBCDBE06D4F"/>
+</associations>
+</Column>
+<Column name="HERRAMIENTA_TIPO_ID" id="71EBF3A9-78E8-EE2C-A9A8-7E4D4FC7E829">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>HERRAMIENTA</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_TIPO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="254D52D6-9603-52A9-F818-2898A51F65FA" referredColumn="EE99EBC2-730D-727B-C276-04271CAA2CA3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="986E569F-9E9D-B92E-0921-0ACB0C1376D4" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008388</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="726A8B20-3ACA-E10A-1782-C2BBC500227B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="921EF7E7-3AB7-1380-A08E-B2B23FD6CF19" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_CATEGORIA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_CATEGORIA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="918C4C2F-0494-E8B0-98CD-C48560468318"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F4D9220-68F0-D0DB-5865-BCCABA0701FB" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_MARCA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_MARCA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FFDDBA2-8C19-0783-9880-DF7FB5A30CD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="941C5E5D-5A3F-D31A-3AD6-1B6AF92244E9" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_TIPO_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_TIPO_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71EBF3A9-78E8-EE2C-A9A8-7E4D4FC7E829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65A1B010-0B91-9354-E22C-F88AE1E0AEE6" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="HERRAMIENTA_UBICACION_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_UBICACION_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="323EDDBA-1DCC-F058-79CB-4A5CFC1FF0D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F647B09E-829A-50E4-A40F-AA222B7552BE" name="HERRAMIENTA_HERRAMIENTA_CATEGORIA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="918C4C2F-0494-E8B0-98CD-C48560468318"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE249606-63A7-BF26-3E90-FB453A176455" name="HERRAMIENTA_HERRAMIENTA_MARCA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FFDDBA2-8C19-0783-9880-DF7FB5A30CD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42CB7473-7F85-E3C4-E387-F6FB834B8A73" name="HERRAMIENTA_HERRAMIENTA_TIPO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71EBF3A9-78E8-EE2C-A9A8-7E4D4FC7E829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4846BF9-AD4C-F18D-3E4E-12280E43AA79" name="HERRAMIENTA_HERRAMIENTA_UBICACION_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="323EDDBA-1DCC-F058-79CB-4A5CFC1FF0D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

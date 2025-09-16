@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="85675CE1-E6CB-965A-AB07-2A89494604CF" containerWithKeyObject="3E43653D-4C78-0C70-9740-ECF08AEB901F" localFKIndex="288B65E6-B631-59DD-158A-8600311BA336" name="REPORTE_CREADO_POR_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>REPORTE_CREADO_POR_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CF9BA01E-9CE0-5F03-A45A-A38DA1F9D62F</referredTableID>
+<keyObject>9130BEB5-268A-52E3-2C2C-A98643A3D40B</keyObject>
+<referredKeyID>9130BEB5-268A-52E3-2C2C-A98643A3D40B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

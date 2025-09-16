@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DF0F1C5-423B-0651-3AFD-8939D981D3B4" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MATERIAL">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MATERIAL</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F035F93A-301D-44C2-6DE1-1331BCC7700C">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>material_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>MATERIAL_BI</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="4CA71798-9BDA-1998-EE55-3103207DE312">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="F306B012-205B-A0A1-746C-83562C894742">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>FECHA_VENCIMIENTO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="A253D223-690A-E961-6654-2DCF9AFB0475">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<constraintName>MATERIAL_ACTIVO_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIAL_CATEGORIA_ID" id="6446DEF7-389C-2437-E1E4-4FB8CD687CAB">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>MATERIAL_CATEGORIA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F53C9467-3AC7-46EC-DB0D-256A881D1748" referredColumn="94A458D2-3EE0-5654-9849-1B34918BDBA5"/>
+</associations>
+</Column>
+<Column name="MATERIAL_MARCA_ID" id="1FCEDFD1-CFF2-03FD-F14F-AB0AEBC59422">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>MATERIAL_MARCA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E72EAD2-23A4-C96C-8F5C-9D1939C564DE" referredColumn="6A320734-2A6D-24E5-DBBE-15ED9017A2E8"/>
+</associations>
+</Column>
+<Column name="MATERIAL_TIPO_ID" id="F755C3A6-2480-B841-10AF-9667BEB3AB48">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MATERIAL</sourceObjSchema>
+<sourceObjName>MATERIAL_TIPO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92061ABA-C3A4-753D-C8F8-E5138980C3A2" referredColumn="F1F153EE-3A95-3080-49BE-8D0FD498B971"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5D54D75-EC19-A2CB-7BC3-09FCBDF71FDE" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MATERIAL_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008384</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F035F93A-301D-44C2-6DE1-1331BCC7700C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFAE71A9-8321-0FB3-9721-C3CC5BB83F55" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MATERIAL_CATEGORIA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MATERIAL_CATEGORIA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6446DEF7-389C-2437-E1E4-4FB8CD687CAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFB28045-A6D1-5C77-934E-9BCDB298C632" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MATERIAL_MARCA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MATERIAL_MARCA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FCEDFD1-CFF2-03FD-F14F-AB0AEBC59422"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C2C812C-16C0-9C2E-BA42-C1BA9CF05D44" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MATERIAL_TIPO_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MATERIAL_TIPO_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F755C3A6-2480-B841-10AF-9667BEB3AB48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F83B2896-E74B-CE2A-5DC6-271DED44EF6E" name="MATERIAL_MATERIAL_CATEGORIA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6446DEF7-389C-2437-E1E4-4FB8CD687CAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C670E77-1214-83D3-2746-0571626576D1" name="MATERIAL_MATERIAL_MARCA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FCEDFD1-CFF2-03FD-F14F-AB0AEBC59422"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD121FB7-31A5-254A-0914-4FFC1EE3199D" name="MATERIAL_MATERIAL_TIPO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F755C3A6-2480-B841-10AF-9667BEB3AB48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

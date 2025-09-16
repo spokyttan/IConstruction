@@ -1,0 +1,271 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B16B0007-DE66-F8F3-CE64-735910BE5338" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MOVIMIENTO_INVENTARIO">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVIMIENTO_INVENTARIO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="13DC0F11-A846-6AEA-E183-081EF0C98CEC">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>movimiento_inventario_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>MOVIMIENTO_INVENTARIO_BI</autoIncrementTriggerName>
+</Column>
+<Column name="FECHA" id="B2447B08-E95F-F728-6525-86AFDE2569B3">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>FECHA</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="EA882D43-82B6-6088-F6E0-87E87F0EED35">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BODEGA_ID" id="4E0EA8FB-EFD8-5224-063C-676BE90AA19E">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>BODEGA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78C19C7F-3A52-0150-2F0F-5833F4CA50EB" referredColumn="64C3E7FF-EF63-0837-7630-B2BE34148F29"/>
+</associations>
+</Column>
+<Column name="MATERIAL_ID" id="AA4777F8-AF80-8D83-6CB2-D7BA40EF8A06">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>MATERIAL_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88F46DC6-629A-6CD6-A862-B70DBA13EA02" referredColumn="F035F93A-301D-44C2-6DE1-1331BCC7700C"/>
+</associations>
+</Column>
+<Column name="HERRAMIENTA_ID" id="61BEACBA-1DBA-A060-9E02-5EA382044991">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89EF8608-2E85-A18C-2D4E-979B2BAAB792" referredColumn="726A8B20-3ACA-E10A-1782-C2BBC500227B"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="CE14523C-66DD-E7D3-3452-46D5F466F1B5">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCIA" id="4E39FBF0-4354-E39A-CB86-5D57E7DEDDE6">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>REFERENCIA</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="17133D30-5FEB-505A-F2BF-60E430BE2C65">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_INVENTARIO</sourceObjSchema>
+<sourceObjName>USUARIO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="264BDED2-B568-9AA4-6CBA-E9A4ABD73446" referredColumn="C3BD0430-C24E-8C70-DA5A-9F3ACF19493B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E40BFF95-D408-7613-B2DB-BB7C7E7C19B9" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MOVIMIENTO_INVENTARIO_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008471</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13DC0F11-A846-6AEA-E183-081EF0C98CEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD0375A4-82C9-F1F9-6F74-8E4554F78CDE" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MOVINV_BODEGA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVINV_BODEGA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E0EA8FB-EFD8-5224-063C-676BE90AA19E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA7FEDB8-0E1F-27E7-D13A-BD484188F05B" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MOVINV_HERRAMIENTA_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVINV_HERRAMIENTA_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61BEACBA-1DBA-A060-9E02-5EA382044991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="068FFFC0-98B9-A3E9-0814-405C5CCE3C3A" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MOVINV_MATERIAL_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVINV_MATERIAL_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA4777F8-AF80-8D83-6CB2-D7BA40EF8A06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD846B52-7083-8AFE-ED5E-3966E58D08A9" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="MOVINV_USUARIO_IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVINV_USUARIO_IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17133D30-5FEB-505A-F2BF-60E430BE2C65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18C3AC21-5FE7-2511-8828-50287E9CEECE" name="MOVINV_BODEGA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E0EA8FB-EFD8-5224-063C-676BE90AA19E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30D4D760-F3E1-C1CE-3B23-05204A467BF3" name="MOVINV_HERRAMIENTA_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61BEACBA-1DBA-A060-9E02-5EA382044991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24686CE5-FF4E-083D-D43F-3017607735A5" name="MOVINV_MATERIAL_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA4777F8-AF80-8D83-6CB2-D7BA40EF8A06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13191923-CE7F-5460-6673-EA1AE460DF88" name="MOVINV_USUARIO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17133D30-5FEB-505A-F2BF-60E430BE2C65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

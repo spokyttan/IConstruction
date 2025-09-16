@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9DC4164-C4FC-EA74-7B9A-867C65370647" containerWithKeyObject="1112778C-5FB8-B0DC-F1E5-DE276EDB8EFF" localFKIndex="A4846BF9-AD4C-F18D-3E4E-12280E43AA79" name="HERRAMIENTA_HERRAMIENTA_UBICACION_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>HERRAMIENTA_HERRAMIENTA_UBICACION_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.HERRAMIENTA_UBICACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C9815C2B-1683-04A0-4902-C6A044A68D52</referredTableID>
+<keyObject>60D49A4E-091C-50B2-15E3-3325DFD42009</keyObject>
+<referredKeyID>60D49A4E-091C-50B2-15E3-3325DFD42009</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

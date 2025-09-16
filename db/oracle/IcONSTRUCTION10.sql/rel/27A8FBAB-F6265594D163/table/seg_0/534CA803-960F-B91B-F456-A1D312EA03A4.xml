@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="534CA803-960F-B91B-F456-A1D312EA03A4" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="SUPERVISOR_OBRA">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SUPERVISOR_OBRA</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:35 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="29F2451F-BC4D-7592-AE32-1F24EBC517A5">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SUPERVISOR_OBRA</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>supervisor_obra_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>SUPERVISOR_OBRA_BI</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="1ECA6C4D-F2C9-32A4-B96C-EF509ACAF07D">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SUPERVISOR_OBRA</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="F575BFAA-8F18-7C12-0C5A-4C48CB9FD61F">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SUPERVISOR_OBRA</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID" id="3AB8863B-FE54-B379-678D-B44C98AD83C1">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SUPERVISOR_OBRA</sourceObjSchema>
+<sourceObjName>USUARIO_ID</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:37 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="778C15A6-0D8A-1F17-450F-19C6870B5B2C" referredColumn="C3BD0430-C24E-8C70-DA5A-9F3ACF19493B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F350F433-2B26-1161-BF38-653676C15519" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="SUPERVISOR_OBRA_PK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008403</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29F2451F-BC4D-7592-AE32-1F24EBC517A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A406413-4059-2957-2120-AB0FDC953DA9" schemaObject="8B5887EF-FA91-8685-474A-AB5B9CDC33AA" name="SUPERVISOR_OBRA__IDX">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SUPERVISOR_OBRA__IDX</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:38 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AB8863B-FE54-B379-678D-B44C98AD83C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="330CE7B5-6F27-F651-8938-EAE2E4C44CB0" name="SUPERVISOR_OBRA_USUARIO_FK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AB8863B-FE54-B379-678D-B44C98AD83C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

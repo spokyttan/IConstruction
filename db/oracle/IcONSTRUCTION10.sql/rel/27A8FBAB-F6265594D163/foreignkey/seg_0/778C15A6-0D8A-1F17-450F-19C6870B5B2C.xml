@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="778C15A6-0D8A-1F17-450F-19C6870B5B2C" containerWithKeyObject="534CA803-960F-B91B-F456-A1D312EA03A4" localFKIndex="330CE7B5-6F27-F651-8938-EAE2E4C44CB0" name="SUPERVISOR_OBRA_USUARIO_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SUPERVISOR_OBRA_USUARIO_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CF9BA01E-9CE0-5F03-A45A-A38DA1F9D62F</referredTableID>
+<keyObject>9130BEB5-268A-52E3-2C2C-A98643A3D40B</keyObject>
+<referredKeyID>9130BEB5-268A-52E3-2C2C-A98643A3D40B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

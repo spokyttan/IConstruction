@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="69B320C9-F489-8778-AE8C-B78B3D5357FD" mainViewID="141E048F-49CD-AFF1-D273-66C20D3CDF1F">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:16:09 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

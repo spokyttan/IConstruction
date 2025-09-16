@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="MOVIMIENTO_INVENTARIO_AI" directorySegmentName="seg_0" id="77A9B24B-A207-EDCF-DFAA-7E251F38DD7D">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MOVIMIENTO_INVENTARIO_AI</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+  v_sign NUMBER := f_signo_por_tipo(:NEW.tipo);
+BEGIN
+  IF :NEW.material_id IS NOT NULL THEN
+    p_upsert_stock_material(:NEW.bodega_id, :NEW.material_id, v_sign * :NEW.cantidad);
+  ELSIF :NEW.herramienta_id IS NOT NULL THEN
+    p_upsert_stock_herramienta(:NEW.bodega_id, :NEW.herramienta_id, v_sign * :NEW.cantidad);
+  END IF;
+END;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>6ADB1CDC-AFE3-3168-61EF-A99706B37830</owner>
+<table>B16B0007-DE66-F8F3-CE64-735910BE5338</table>
+</TriggerOraclev10g>

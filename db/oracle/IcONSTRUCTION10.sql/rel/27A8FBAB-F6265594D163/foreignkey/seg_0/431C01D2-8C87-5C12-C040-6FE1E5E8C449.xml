@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="431C01D2-8C87-5C12-C040-6FE1E5E8C449" containerWithKeyObject="4D0BD2BE-EBF6-02DD-F0FA-CDBF0279894F" localFKIndex="EAADF5BA-1F5C-D85F-6536-A42BA496D93B" name="BODEGAS_HERRAMIENTAS_HERRAMIENTA_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BODEGAS_HERRAMIENTAS_HERRAMIENTA_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.HERRAMIENTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1112778C-5FB8-B0DC-F1E5-DE276EDB8EFF</referredTableID>
+<keyObject>986E569F-9E9D-B92E-0921-0ACB0C1376D4</keyObject>
+<referredKeyID>986E569F-9E9D-B92E-0921-0ACB0C1376D4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

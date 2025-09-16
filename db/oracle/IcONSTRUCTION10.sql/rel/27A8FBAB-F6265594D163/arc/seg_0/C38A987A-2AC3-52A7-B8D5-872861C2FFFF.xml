@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="C38A987A-2AC3-52A7-B8D5-872861C2FFFF" name="MOVINV_ITEM_CHK">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:45 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<mandatory>true</mandatory>
+<table>B16B0007-DE66-F8F3-CE64-735910BE5338</table>
+<fkeys>
+<fkeyID>88F46DC6-629A-6CD6-A862-B70DBA13EA02</fkeyID>
+<fkeyID>89EF8608-2E85-A18C-2D4E-979B2BAAB792</fkeyID>
+</fkeys>
+</FKArc>

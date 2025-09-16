@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DFCE3CE4-50B8-A722-FD44-F8CBFDC1F28A" containerWithKeyObject="6884C28A-D35C-8864-723A-21A1E8E9B89D" localFKIndex="9C6B53CE-FBDA-DA97-480E-E199918181F7" name="BODEGUERO_BODEGUERO_TURNO_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BODEGUERO_BODEGUERO_TURNO_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.BODEGUERO_TURNO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA451EC4-E9D7-6F63-3CE5-C43BF4616EAE</referredTableID>
+<keyObject>5E557820-1B17-B404-78A4-E60255ACC192</keyObject>
+<referredKeyID>5E557820-1B17-B404-78A4-E60255ACC192</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

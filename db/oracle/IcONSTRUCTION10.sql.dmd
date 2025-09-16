@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="IcONSTRUCTION10.sql" id="189DE083-6099-D99E-80B5-2D0854F3A21A" version="3.5">
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:16:08 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>189DE083-6099-D99E-80B5-2D0854F3A21A</designId>
+</OSDM_Design>

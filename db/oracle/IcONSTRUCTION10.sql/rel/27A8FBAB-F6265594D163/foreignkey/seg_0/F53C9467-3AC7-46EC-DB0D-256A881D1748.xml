@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F53C9467-3AC7-46EC-DB0D-256A881D1748" containerWithKeyObject="3DF0F1C5-423B-0651-3AFD-8939D981D3B4" localFKIndex="F83B2896-E74B-CE2A-5DC6-271DED44EF6E" name="MATERIAL_MATERIAL_CATEGORIA_FK">
+<sourceConnName>ICONSTRUCTION</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>MATERIAL_MATERIAL_CATEGORIA_FK</sourceObjName>
+<createdBy>natta</createdBy>
+<createdTime>2025-09-16 14:19:42 UTC</createdTime>
+<ownerDesignName>IcONSTRUCTION10.sql</ownerDesignName>
+<referredTableLongName>SYSTEM.MATERIAL_CATEGORIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>45A8CDC8-B6C2-8DC0-E035-C2EBD5D675DC</referredTableID>
+<keyObject>D6229388-624A-242B-FB9D-BAD9E1BDA96E</keyObject>
+<referredKeyID>D6229388-624A-242B-FB9D-BAD9E1BDA96E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
