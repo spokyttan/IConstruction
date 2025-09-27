@@ -1,6 +1,6 @@
 # IConstruction .NET Backend
 
-Minimal ASP.NET Core 8 Web API wired to Oracle. Includes health and stock endpoints. Loan/Return endpoints are scaffolded (501) until a small PL/SQL wrapper is added to accept JSON arrays.
+Minimal ASP.NET Core 8 Web API wired to Oracle. Includes health, config, and stock endpoints. Loan/Return endpoints are implemented via PL/SQL wrappers that accept JSON arrays (`pkg_prestamos_api`, `pkg_devoluciones_api`).
 
 ## Configuración
 
@@ -13,14 +13,24 @@ En desarrollo, `launchSettings.json` ya define valores de ejemplo.
 
 ## Endpoints
 
-- GET /health
-- GET /stock/herramientas
-- GET /stock/materiales
-- POST /prestamos (501 por ahora)
-- POST /prestamos/{prestamoId}/devoluciones (501 por ahora)
+- GET `/` → redirige a `/swagger`
+- GET `/health`
+- GET `/health/config`
+- GET `/health/db` (requiere Oracle)
+- GET `/health/user-tables` (requiere Oracle)
+- GET `/health/all-tables` (requiere Oracle)
+- POST `/auth/login` (JWT)
+- POST `/auth/set-password` (JWT requerido)
+- GET `/auth/me` (JWT requerido, política `AdminOnly`)
+- GET `/stock/herramientas` (JWT)
+- GET `/stock/materiales` (JWT)
+- GET `/reportes/proyecto/{proyectoId}` (JWT)
+- GET `/prestamos/detalle` (JWT)
+- POST `/prestamos` (JWT, requiere `ops_api.sql`)
+- POST `/prestamos/{prestamoId}/devoluciones` (JWT, requiere `ops_devolucion.sql` + `ops_api.sql`)
 
 ## Próximos pasos
 
-- Agregar un wrapper PL/SQL que parsee JSON a tipos/tabla y llamar desde .NET con un solo parámetro CLOB.
-- Exponer endpoints de reportes usando las vistas creadas.
-- Autenticación básica (JWT) y roles.
+- Revisar y aplicar los scripts de `db/oracle` en el orden indicado en su README.
+- Ajustar CORS (`Program.cs`) según el origen del frontend.
+- Configurar variables JWT en producción y cambiar la clave por defecto.

@@ -548,3 +548,6 @@ public record DevolucionDetalle(int herramienta_id, int cantidad);
 public record DevolucionRequest(int bodega_id, List<DevolucionDetalle> detalle);
 public record LoginRequest(string correo, string password);
 public record SetPasswordRequest(int usuario_id, string nueva_password);
+
+// Expose Program for integration testing (WebApplicationFactory<Program>)
+public partial class Program { }

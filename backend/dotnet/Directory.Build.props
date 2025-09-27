@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <!-- Redirect build output and intermediate paths outside OneDrive to avoid obj/bin folder issues -->
+    <BaseOutputPath>$(USERPROFILE)\.ic_tmp\IConstruction\bin\$(MSBuildProjectName)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(USERPROFILE)\.ic_tmp\IConstruction\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+  </PropertyGroup>
+</Project>
